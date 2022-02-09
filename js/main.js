@@ -150,7 +150,7 @@ $(document).ready(function () {
         },
     });
     var productImgs = new Swiper(".product-imgs", {
-        spaceBetween: 1,
+        spaceBetween: 15,
         // loop: true,
         thumbs: {
             swiper: productThumbs,
