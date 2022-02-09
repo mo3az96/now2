@@ -4240,13 +4240,13 @@ html[dir="ltr"] .order-item .order-date {
   }
 }
 
-.order-item .order-step:last-of-type {
+.order-item .order-step:first-of-type {
   -webkit-box-flex: 0;
       -ms-flex: 0;
           flex: 0;
 }
 
-.order-item .order-step:last-of-type .step-icon::after {
+.order-item .order-step:first-of-type .step-icon::before {
   display: none;
 }
 
@@ -4254,7 +4254,7 @@ html[dir="ltr"] .order-item .order-date {
   background-color: #21bf46;
 }
 
-.order-item .order-step.done .step-icon::after {
+.order-item .order-step.done .step-icon::before {
   background-color: #21bf46;
 }
 
@@ -4300,7 +4300,7 @@ html[dir="ltr"] .order-item .order-date {
   transition: all 0.3s ease-in-out;
 }
 
-.order-item .step-icon::after {
+.order-item .step-icon::before {
   height: 5px;
   width: 100%;
   content: "";
@@ -4312,18 +4312,18 @@ html[dir="ltr"] .order-item .order-date {
 }
 
 @media (max-width: 767px) {
-  .order-item .step-icon::after {
+  .order-item .step-icon::before {
     position: absolute;
     width: 5px;
     height: 40px;
     top: 100%;
   }
-  html[dir="rtl"] .order-item .step-icon::after {
+  html[dir="rtl"] .order-item .step-icon::before {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
-  html[dir="ltr"] .order-item .step-icon::after {
+  html[dir="ltr"] .order-item .step-icon::before {
     right: 50%;
     -webkit-transform: translateX(50%);
             transform: translateX(50%);
@@ -4337,9 +4337,9 @@ html[dir="ltr"] .order-item .order-date {
   white-space: nowrap;
   position: absolute;
   top: 100%;
-  right: 20px;
-  -webkit-transform: translateX(50%);
-          transform: translateX(50%);
+  left: 20px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 @media (max-width: 767px) {
@@ -4645,13 +4645,13 @@ html[dir="ltr"] .single-order .order-date {
   }
 }
 
-.single-order .order-step:last-of-type {
+.single-order .order-step:first-of-type {
   -webkit-box-flex: 0;
       -ms-flex: 0;
           flex: 0;
 }
 
-.single-order .order-step:last-of-type .step-icon::after {
+.single-order .order-step:first-of-type .step-icon::before {
   display: none;
 }
 
@@ -4659,7 +4659,7 @@ html[dir="ltr"] .single-order .order-date {
   background-color: #21bf46;
 }
 
-.single-order .order-step.done .step-icon::after {
+.single-order .order-step.done .step-icon::before {
   background-color: #21bf46;
 }
 
@@ -4705,7 +4705,7 @@ html[dir="ltr"] .single-order .order-date {
   transition: all 0.3s ease-in-out;
 }
 
-.single-order .step-icon::after {
+.single-order .step-icon::before {
   height: 5px;
   width: 100%;
   content: "";
@@ -4717,18 +4717,18 @@ html[dir="ltr"] .single-order .order-date {
 }
 
 @media (max-width: 767px) {
-  .single-order .step-icon::after {
+  .single-order .step-icon::before {
     position: absolute;
     width: 5px;
     height: 40px;
     top: 100%;
   }
-  html[dir="rtl"] .single-order .step-icon::after {
+  html[dir="rtl"] .single-order .step-icon::before {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
-  html[dir="ltr"] .single-order .step-icon::after {
+  html[dir="ltr"] .single-order .step-icon::before {
     right: 50%;
     -webkit-transform: translateX(50%);
             transform: translateX(50%);
@@ -4742,9 +4742,9 @@ html[dir="ltr"] .single-order .order-date {
   white-space: nowrap;
   position: absolute;
   top: 100%;
-  right: 20px;
-  -webkit-transform: translateX(50%);
-          transform: translateX(50%);
+  left: 20px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 @media (max-width: 767px) {
